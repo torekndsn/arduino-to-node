@@ -19,5 +19,5 @@ function updateScene(){
 }
 
 function updateData(data) {
-	hue_ = data;
+	console.log("incoming data: " + data;
 }

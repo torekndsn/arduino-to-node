@@ -3,7 +3,7 @@ var hue_ = 100;
 
 function setup() 
 {
-	createCanvas(320, 568);
+	createCanvas(displayWidth, displayHeight);
 	colorMode(HSB);
 	background(100,200,14);
 	setInterval(updateScene, 500);

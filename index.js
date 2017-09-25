@@ -13,7 +13,7 @@ app.get('/set_value', function(request, response){
 });
 
 app.get('/set_value', function(request, response){
-	respone.send(String(potentiometer);
+	respone.send(String(potentiometer));
 });
 
 app.listen(app.get('port'), function(){

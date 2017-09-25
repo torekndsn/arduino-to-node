@@ -19,5 +19,5 @@ function updateScene(){
 }
 
 function updateData(data) {
-	console.log("incoming data: " + data;
+	console.log("incoming data: " + data);
 }

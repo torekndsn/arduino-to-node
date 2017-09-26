@@ -1,25 +1,23 @@
+var p = 0;
 
-var hue_ = 0;
-
-function setup() 
-{
-	createCanvas(displayWidth, displayHeight);
-	colorMode(HSB);
-	background(100,200,14);
-	setInterval(updateScene, 500);
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  noStroke();
+  textAlign(CENTER);
+  background(0);
+  setInterval(updateScene, 1000);
 }
 
-function draw() 
-{
-	background(hue_, 100,90);  
+function draw() {
+  background(0);
+  ellipse(width/2, height/2, p, p);
 }
 
-function updateScene(){
-	loadJSON('/get_potentio', updateData);
+
+function updateScene() {
+  loadJSON('/get_pressure', updatePressure);
 }
 
-function updateData(data) {
-	//hue_ = data;
-	console.log("incoming hue: " + hue_);
-	console.log("incoming data: " + data);
+function updatePressure(data) {
+  p = data;
 }

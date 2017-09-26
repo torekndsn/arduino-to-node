@@ -15,7 +15,7 @@ function draw()
 }
 
 function updateScene(){
-	loadJSON('/get_pressure', updateData);
+	loadJSON('/get_potentio', updateData);
 }
 
 function updateData(data) {

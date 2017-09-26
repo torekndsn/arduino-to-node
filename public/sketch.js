@@ -20,4 +20,5 @@ function updateScene() {
 
 function updatePressure(data) {
   p = data;
+  console.log("p: " + p);
 }

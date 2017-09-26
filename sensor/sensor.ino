@@ -30,7 +30,7 @@ void loop() {
   //initialize the client library.
   HttpClient client; 
 
-  client.get("https://arduino-to-node.herokuapp.com//get_value?val="+String(sensorValue)); 
+  client.get("https://arduino-to-node.herokuapp.com//get_potentio?val="+String(sensorValue)); 
 
   while(client.available())
   {

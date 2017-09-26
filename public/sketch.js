@@ -1,5 +1,5 @@
 
-var hue_ = 100;
+var hue_ = 0;
 
 function setup() 
 {
@@ -19,5 +19,7 @@ function updateScene(){
 }
 
 function updateData(data) {
+	//hue_ = data;
+	console.log("incoming hue: " + hue_);
 	console.log("incoming data: " + data);
 }
